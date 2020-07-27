@@ -1,4 +1,4 @@
 def from_jpy(api, ticker, jpy):
     ltp = api.ticker(product_code=ticker)["ltp"]
-    return round(float(jpy)/ltp, 2)
+    return round(float(jpy)/ltp, 4) - 0.0001
 
